@@ -6,6 +6,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <link rel="stylesheet" href="css/style.css">
+  <script>
+    document.documentElement.className += ' js'
+  </script>
+
   <title>Animais</title>
 </head>
 
@@ -20,20 +24,20 @@
     </ul>
   </nav>
 
-  <section class="grid-section animais" id="animais">
+  <section class="grid-section animais js-scroll" id="animais">
     <h1 class="titulo">Animais Fantásticos</h1>
 
-    <ul class="animais-lista">
-      <li><img src="./img/imagem1.jpg" alt=""></li>
+    <ul class="animais-lista js-tabmenu">
+      <li><img src="./img/imagem1.jpg"></li>
       <li><img src="./img/imagem2.jpg" alt=""></li>
-      <li><img src="./img/imagem3.jpg" alt=""></li>
+      <li><img src="./img/imagem3.jpg"></li>
       <li><img src="./img/imagem4.jpg" alt=""></li>
       <li><img src="./img/imagem5.jpg" alt=""></li>
-      <li><img src="./img/imagem6.jpg" alt=""></li>
+      <li><img src="./img/imagem6.jpg"></li>
     </ul>
 
-    <div class="animais-descricao animais">
-      <section class="animais">
+    <div class="animais-descricao animais js-tabcontent">
+      <section>
         <h2>Raposa</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto quidem eum possimus odit voluptatibus id, nesciunt ab quaerat facilis architecto quae consequuntur pariatur. Quam tempora porro veritatis ratione vel.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa libero minus enim iste necessitatibus ipsam maxime cum consequatur unde, iure sapiente illo temporibus nulla quibusdam, nobis minima molestiae. Facere, molestias.</p>
@@ -53,21 +57,17 @@
         <h2>Urso</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto quidem eum possimus odit voluptatibus id, nesciunt ab quaerat facilis architecto quae consequuntur pariatur. Quam tempora porro veritatis ratione vel.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa libero minus enim iste necessitatibus ipsam maxime cum consequatur unde, iure sapiente illo temporibus nulla quibusdam, nobis minima molestiae. Facere, molestias.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iusto beatae eos id quasi molestias corporis animi sunt, recusandae autem reiciendis, impedit, quae saepe fuga porro qui iure vel! Suscipit.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto repellendus, perferendis deserunt eaque atque, sint numquam in quibusdam voluptatem aut quidem error et fuga mollitia quasi. Non, dignissimos corporis?</p>
       </section>
 
       <section>
         <h2>Lobo</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto quidem eum possimus odit voluptatibus id, nesciunt ab quaerat facilis architecto quae consequuntur pariatur. Quam tempora porro veritatis ratione vel.</p>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa libero minus enim iste necessitatibus ipsam maxime cum consequatur unde, iure sapiente illo temporibus nulla quibusdam, nobis minima molestiae. Facere, molestias.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iusto beatae eos id quasi molestias corporis animi sunt, recusandae autem reiciendis, impedit, quae saepe fuga porro qui iure vel! Suscipit.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto repellendus, perferendis deserunt eaque atque, sint numquam in quibusdam voluptatem aut quidem error et fuga mollitia quasi. Non, dignissimos corporis?</p>
       </section>
 
       <section>
         <h2>Macaco</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto quidem eum possimus odit voluptatibus id, nesciunt ab quaerat facilis architecto quae consequuntur pariatur. Quam tempora porro veritatis ratione vel.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa libero minus enim iste necessitatibus ipsam maxime cum consequatur unde, iure sapiente illo temporibus nulla quibusdam, nobis minima molestiae. Facere, molestias.</p>
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iusto beatae eos id quasi molestias corporis animi sunt, recusandae autem reiciendis, impedit, quae saepe fuga porro qui iure vel! Suscipit.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto repellendus, perferendis deserunt eaque atque, sint numquam in quibusdam voluptatem aut quidem error et fuga mollitia quasi. Non, dignissimos corporis?</p>
@@ -77,16 +77,15 @@
         <h2>Leão</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem iusto quidem eum possimus odit voluptatibus id, nesciunt ab quaerat facilis architecto quae consequuntur pariatur. Quam tempora porro veritatis ratione vel.</p>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Culpa libero minus enim iste necessitatibus ipsam maxime cum consequatur unde, iure sapiente illo temporibus nulla quibusdam, nobis minima molestiae. Facere, molestias.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Pariatur iusto beatae eos id quasi molestias corporis animi sunt, recusandae autem reiciendis, impedit, quae saepe fuga porro qui iure vel! Suscipit.</p>
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quo iusto repellendus, perferendis deserunt eaque atque, sint numquam in quibusdam voluptatem aut quidem error et fuga mollitia quasi. Non, dignissimos corporis?</p>
       </section>
     </div>
   </section>
 
-  <section class="grid-section faq" id="faq">
+  <section class="grid-section faq js-scroll" id="faq">
     <h2 class="titulo">Faq</h2>
 
-    <dl class="faq-lista">
+    <dl class="faq-lista js-accordion">
       <dt>Pergunta Um</dt>
       <dd>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias quasi magni, repudiandae eveniet ea voluptate commodi vitae repellendus quis ex excepturi placeat labore amet sint earum tenetur maxime ab perspiciatis.</dd>
 
@@ -104,7 +103,7 @@
     </dl>
   </section>
 
-  <section class="grid-section contato" id="contato">
+  <section class="grid-section contato js-scroll" id="contato">
     <h2 class="titulo">Contato</h2>
 
     <div class="mapa">
